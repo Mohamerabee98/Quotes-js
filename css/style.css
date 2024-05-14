@@ -1,0 +1,27 @@
+body {
+    background-color: #4793AF !important;
+}
+
+.box {
+    height: 400px !important;
+}
+
+.btn:hover {
+    background-color: cadetblue !important;
+    transition: all .4s;
+
+
+}
+
+.box h1 {
+    font-family: "Roboto", sans-serif;
+
+}
+
+.box p {
+    font-family: "Zilla Slab", serif;
+}
+
+
+
+/* lg */
