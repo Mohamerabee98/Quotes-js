@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crds with js</title>
+    <link rel="stylesheet" href="add-style/bootstrap.min.css">
+</head>
+
+<body >
+    <div class="container mt-5">
+        <div class="row ">
+            <div class="col-md-12 ">
+                <form action="" class="w-75 m-auto">
+                    <div class="form-floating mb-3  ">
+                        <input type="Text" class="form-control border-1 border-dark" id="productName"
+                            placeholder="name@example.com">
+                        <label for="productName">Product Name:</label>
+                    </div>
+                    <div class="form-floating mb-3  ">
+                        <input type="Text" class="form-control border-1 border-dark" id="productPrice"
+                            placeholder="name@example.com">
+                        <label for="productPrice">Product Price:</label>
+                    </div>
+
+
+
+
+                    <div class="form-floating mb-3  ">
+                        <input class="form-control border-1 border-dark" list="datalistOptions" id="productCat"
+                            placeholder="Type to search...">
+                        <datalist id="datalistOptions">
+                            <option value="pc">
+                            <option value="electronics">
+                            <option value="tvs">
+                            <option value="toys">
+                            <option value="clothes">
+                        </datalist>
+                        <label for="productCat" class="form-label">Product Category:</label>
+
+                    </div>
+                    <div class="form-floating mb-3  ">
+                        <textarea type="Text" class="form-control border-1 border-dark" id="productDesc"
+                            placeholder="name@example.com"></textarea>
+                        <label for="productDesc">Product Desc:</label>
+                    </div>
+                    <button class="btn btn-info text-white ms-auto d-block" id="addBtn" type="button">add
+                        product</button>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="row gy-4" id="productRow">
+
+        </div>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+
+
+    <script src="add-style/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
