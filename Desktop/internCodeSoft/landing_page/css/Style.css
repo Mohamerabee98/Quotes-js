@@ -1,0 +1,263 @@
+/* Reset and General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+}
+/* start navbar secion */
+.header {
+    background: linear-gradient(to right, #ff7e5f, #ff5f7e);
+    color: #fff;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+.request-consult {
+    background-color: #f4f4f4;
+    border: none;
+    color: #000;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all .3s;
+    border-radius: 10px;
+}
+.request-consult:hover{
+    background-color: #ff5f7e;
+    color: #fff;
+
+}
+.contact-info{
+    padding-left: 50px;
+
+  
+}
+.contact-info span{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    color: #000;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold ;
+    padding-left: 50px;
+
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.buy-now {
+    background-color: orange;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10%;
+    
+}
+/* end hero secion */
+/* start hero secion */
+.hero-section {
+    background-image: url(../images/backgrooundHome.jpeg);
+    background-size: cover;
+    background-position: center;
+    min-height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+}
+.hero-text p {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+
+.btn {
+    background-color: #ff5f7e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+    transition:  0.3s ease;
+}
+.btn:hover{
+    background-color:#e3274c ;
+}
+/* end hero secion */
+/* Start feature */
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(to right, #f18064, #ec647f);
+    color: #fff;
+    padding: 40px 20px;
+    height: 40vh;
+}
+
+.feature {
+    text-align: center;
+}
+.info-feature{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-bottom: 10px;
+}
+.info-feature i{
+    padding-right: 10px;
+    font-size: 25px;
+}
+/* end feature */
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    padding: 40px 20px;
+   
+     background-color: #f4f4f4; 
+ 
+}
+
+.about-content {
+    max-width: 50%;
+    text-align: start;
+}
+.about-content h2{
+    font-size: 40px;
+  
+}
+.about-content p{
+    line-height: 30px;
+    padding-top: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+
+}
+.about-content :empty {
+    border: solid #ff7e5f 3px;
+    width: 10%;
+
+}
+/* start services */
+.services {
+    text-align: center;
+    padding: 40px 20px;
+}
+.services h2{
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.service-box {
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.service-box img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.service-box h3 {
+    margin-top: 10px;
+    
+}
+/* End services */
+/* start footer */
+/* Footer Section Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.footer p {
+    margin: 0;
+    
+}
+.footer span {
+    font-weight: bold;
+}
+
+/* end footer */
+/* Responsive Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+        display: none;
+    }
+
+    .about-us {
+        flex-direction: column;
+    }
+    .about-content :empty {
+        border: solid #ff7e5f 3px;
+        width: 20%;
+        margin: auto;
+    
+    }
+   
+    .about-content, .about-image {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        height: 60vh;
+    }
+    .services h2{
+        
+        margin-top: 100px;
+    }
+    .service-box img {
+        width: 150px;
+    }
+}
